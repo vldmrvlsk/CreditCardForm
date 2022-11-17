@@ -12,7 +12,7 @@ const cardCVVText = document.querySelector(".cvv-vl");
 
 cardNumber.addEventListener("keyup", (e) => {
     if (!e.target.value) {
-        cardNumberText.innerText = "1234 5678 9101 1121";
+        cardNumberText.innerText = "1234 5678 9012 3456";
     } else {
         const valuesOfInput = e.target.value.replaceAll(" ", "");
 
@@ -33,7 +33,7 @@ cardNumber.addEventListener("keyup", (e) => {
 
 cardHolder.addEventListener("keyup", (e) => {
     if (!e.target.value) {
-        cardHolderText.innerHTML = "NOAH JACOB";
+        cardHolderText.innerHTML = "VIVI VOSAKO";
     } else {
         cardHolderText.innerHTML = e.target.value.toUpperCase();
     }
@@ -41,7 +41,7 @@ cardHolder.addEventListener("keyup", (e) => {
 
 cardExpiration.addEventListener("keyup", (e) => {
     if (!e.target.value) {
-        cardExpirationText.innerHTML = "02/40";
+        cardExpirationText.innerHTML = "07/27";
     } else {
         const valuesOfInput = e.target.value.replace("/", "");
 
@@ -56,7 +56,7 @@ cardExpiration.addEventListener("keyup", (e) => {
 
 cardCVV.addEventListener("keyup", (e) => {
     if (!e.target.value) {
-        cardCVVText.innerHTML = "123";
+        cardCVVText.innerHTML = "999";
     } else {
         cardCVVText.innerHTML = e.target.value;
     }
